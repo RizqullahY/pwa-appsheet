@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#0f172a">
+  <title>AppSheet Portal</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <h1>Portal Aplikasi</h1>
+    <input type="search" id="searchInput" placeholder="Cari aplikasi..." aria-label="Cari aplikasi">
+  </header>
+
+  <main id="appGrid" class="grid"></main>
+
+  <section id="viewer" class="viewer hidden">
+    <div class="viewer-bar">
+      <button id="backBtn" type="button">← Kembali</button>
+      <span id="viewerTitle">Memuat...</span>
+      <a id="directLink" href="#" target="_blank" rel="noopener">Buka Penuh ↗</a>
+    </div>
+    <iframe id="appFrame" src="" title="AppSheet View"></iframe>
+  </section>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
